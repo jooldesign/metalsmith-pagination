@@ -182,7 +182,7 @@ function groupByPagination (file, index, options) {
   // Otherwise options.perPage[0] is number of results for 1st page, 
   // options.perPage[1] is number of results for all other pages
   } else {
-    return (index < options.perPage[0] ? 1 : Math.ceil((index + 1) / options.perPage[1])
+    return (index < options.perPage[0] ? 1 : Math.ceil((index + 1) / options.perPage[1]))
   }
 }
 
